@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design Questionnaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/additional.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Complete this questionnaire to help us understand your website needs and create the perfect website for your business.">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-laptop-code"></i> Website Design Questionnaire</h1>
+            <p>Please complete this questionnaire to help us understand your website needs</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <form id="websiteQuestionnaire">
+            <section class="form-section" id="businessInfo">
+                <h2><i class="fas fa-building"></i> 1. Business Information</h2>
+                
+                <div class="form-group">
+                    <label for="businessName">Business Name: <span class="required">*</span></label>
+                    <input type="text" id="businessName" name="businessName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contactPerson">Contact Person: <span class="required">*</span></label>
+                    <input type="text" id="contactPerson" name="contactPerson" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email: <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone: <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="currentWebsite">Current Website URL (if any):</label>
+                    <input type="url" id="currentWebsite" name="currentWebsite">
+                </div>
+                
+                <div class="form-group">
+                    <label for="businessDescription">Business Description: <span class="required">*</span></label>
+                    <textarea id="businessDescription" name="businessDescription" rows="4" placeholder="Please describe what your business does, your products/services, and your unique value proposition." required></textarea>
+                </div>
+            </section>
+
+            <section class="form-section" id="websiteGoals">
+                <h2><i class="fas fa-bullseye"></i> 2. Website Goals</h2>
+                
+                <div class="form-group">
+                    <label>Primary Goals: <span class="required">*</span></label>
+                    <p class="help-text">What are the main goals for your website? (Select all that apply)</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="goalLeads" name="goals" value="Generate leads">
+                            <label for="goalLeads">Generate leads</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="goalSales" name="goals" value="Sell products/services online">
+                            <label for="goalSales">Sell products/services online</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="goalInfo" name="goals" value="Provide information about your business">
+                            <label for="goalInfo">Provide information about your business</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="goalBrand" name="goals" value="Build brand awareness">
+                            <label for="goalBrand">Build brand awareness</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="goalPortfolio" name="goals" value="Showcase portfolio/work">
+                            <label for="goalPortfolio">Showcase portfolio/work</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="goalCustomerInfo" name="goals" value="Collect customer information">
+                            <label for="goalCustomerInfo">Collect customer information</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="goalOther" name="goals" value="Other">
+                            <label for="goalOther">Other:</label>
+                            <input type="text" id="goalOtherText" name="goalOtherText" class="inline-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="targetAudience">Target Audience: <span class="required">*</span></label>
+                    <p class="help-text">Who is your ideal customer? Please describe their demographics (age, location, income level, etc.), interests, needs, and pain points.</p>
+                    <textarea id="targetAudience" name="targetAudience" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Key Success Metrics: <span class="required">*</span></label>
+                    <p class="help-text">How will you measure the success of your website? (Select all that apply)</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="metricLeads" name="metrics" value="Number of inquiries/leads">
+                            <label for="metricLeads">Number of inquiries/leads</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="metricSales" name="metrics" value="Online sales">
+                            <label for="metricSales">Online sales</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="metricTraffic" name="metrics" value="Website traffic">
+                            <label for="metricTraffic">Website traffic</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="metricTime" name="metrics" value="Time spent on site">
+                            <label for="metricTime">Time spent on site</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="metricShares" name="metrics" value="Social media shares">
+                            <label for="metricShares">Social media shares</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="metricSignups" name="metrics" value="Email sign-ups">
+                            <label for="metricSignups">Email sign-ups</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="metricOther" name="metrics" value="Other">
+                            <label for="metricOther">Other:</label>
+                            <input type="text" id="metricOtherText" name="metricOtherText" class="inline-input">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section" id="featureRequirements">
+                <h2><i class="fas fa-cogs"></i> 3. Website Feature Requirements</h2>
+                
+                <div class="subsection">
+                    <h3>Essential Features</h3>
+                    <p class="help-text">Select all features that you need on your website:</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureBlog" name="essentialFeatures" value="Blog/News section">
+                            <label for="featureBlog">Blog/News section</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureContact" name="essentialFeatures" value="Contact form">
+                            <label for="featureContact">Contact form</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureEcommerce" name="essentialFeatures" value="E-commerce/Online store">
+                            <label for="featureEcommerce">E-commerce/Online store</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureGallery" name="essentialFeatures" value="Photo gallery/Portfolio">
+                            <label for="featureGallery">Photo gallery/Portfolio</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureLogin" name="essentialFeatures" value="Member login area">
+                            <label for="featureLogin">Member login area</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureSearch" name="essentialFeatures" value="Search functionality">
+                            <label for="featureSearch">Search functionality</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureNewsletter" name="essentialFeatures" value="Newsletter signup">
+                            <label for="featureNewsletter">Newsletter signup</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureTestimonials" name="essentialFeatures" value="Testimonials/Reviews section">
+                            <label for="featureTestimonials">Testimonials/Reviews section</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureFAQ" name="essentialFeatures" value="FAQ section">
+                            <label for="featureFAQ">FAQ section</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureAbout" name="essentialFeatures" value="About Us page">
+                            <label for="featureAbout">About Us page</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureServices" name="essentialFeatures" value="Services/Products pages">
+                            <label for="featureServices">Services/Products pages</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featurePrivacy" name="essentialFeatures" value="Privacy Policy and Terms of Service">
+                            <label for="featurePrivacy">Privacy Policy and Terms of Service</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="featureOther" name="essentialFeatures" value="Other">
+                            <label for="featureOther">Other:</label>
+                            <input type="text" id="featureOtherText" name="featureOtherText" class="inline-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Social Media Integration</h3>
+                    <p class="help-text">Which social media platforms would you like to integrate with your website?</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="socialFacebook" name="socialMedia" value="Facebook">
+                            <label for="socialFacebook">Facebook</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="socialInstagram" name="socialMedia" value="Instagram">
+                            <label for="socialInstagram">Instagram</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="socialTwitter" name="socialMedia" value="Twitter/X">
+                            <label for="socialTwitter">Twitter/X</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="socialLinkedIn" name="socialMedia" value="LinkedIn">
+                            <label for="socialLinkedIn">LinkedIn</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="socialYouTube" name="socialMedia" value="YouTube">
+                            <label for="socialYouTube">YouTube</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="socialPinterest" name="socialMedia" value="Pinterest">
+                            <label for="socialPinterest">Pinterest</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="socialTikTok" name="socialMedia" value="TikTok">
+                            <label for="socialTikTok">TikTok</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="socialOther" name="socialMedia" value="Other">
+                            <label for="socialOther">Other:</label>
+                            <input type="text" id="socialOtherText" name="socialOtherText" class="inline-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Content Management Requirements</h3>
+                    <p class="help-text">How will your website content be managed?</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="cmsSelf" name="contentManagement" value="Need ability to update content yourself (CMS)">
+                            <label for="cmsSelf">Need ability to update content yourself (CMS)</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="cmsProfessional" name="contentManagement" value="Plan to have a professional update content">
+                            <label for="cmsProfessional">Plan to have a professional update content</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="cmsRegular" name="contentManagement" value="Require regular blog/news updates">
+                            <label for="cmsRegular">Require regular blog/news updates</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="cmsMultiUser" name="contentManagement" value="Need multiple user access levels">
+                            <label for="cmsMultiUser">Need multiple user access levels</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="cmsOther" name="contentManagement" value="Other">
+                            <label for="cmsOther">Other:</label>
+                            <input type="text" id="cmsOtherText" name="cmsOtherText" class="inline-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Mobile Functionality</h3>
+                    <p class="help-text">What mobile-specific features do you need?</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="mobileResponsive" name="mobileFunctionality" value="Fully responsive design (adapts to all screen sizes)">
+                            <label for="mobileResponsive">Fully responsive design (adapts to all screen sizes)</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="mobileSpecific" name="mobileFunctionality" value="Mobile-specific layouts">
+                            <label for="mobileSpecific">Mobile-specific layouts</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="mobileTouch" name="mobileFunctionality" value="Touch-friendly navigation">
+                            <label for="mobileTouch">Touch-friendly navigation</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="mobilePayment" name="mobileFunctionality" value="Mobile payment options">
+                            <label for="mobilePayment">Mobile payment options</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="mobileOther" name="mobileFunctionality" value="Other">
+                            <label for="mobileOther">Other:</label>
+                            <input type="text" id="mobileOtherText" name="mobileOtherText" class="inline-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Interactive Elements</h3>
+                    <p class="help-text">Select any interactive elements you'd like on your website:</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interactiveForms" name="interactiveElements" value="Contact/Quote request forms">
+                            <label for="interactiveForms">Contact/Quote request forms</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interactiveCalculators" name="interactiveElements" value="Calculators or tools">
+                            <label for="interactiveCalculators">Calculators or tools</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interactiveMaps" name="interactiveElements" value="Interactive maps">
+                            <label for="interactiveMaps">Interactive maps</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interactiveChat" name="interactiveElements" value="Live chat">
+                            <label for="interactiveChat">Live chat</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interactiveBooking" name="interactiveElements" value="Booking/Appointment system">
+                            <label for="interactiveBooking">Booking/Appointment system</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interactiveForum" name="interactiveElements" value="User forums/Community">
+                            <label for="interactiveForum">User forums/Community</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interactiveMembership" name="interactiveElements" value="Membership area">
+                            <label for="interactiveMembership">Membership area</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interactiveOther" name="interactiveElements" value="Other">
+                            <label for="interactiveOther">Other:</label>
+                            <input type="text" id="interactiveOtherText" name="interactiveOtherText" class="inline-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Multimedia Requirements</h3>
+                    <p class="help-text">What types of multimedia content will your website include?</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="multimediaPhotos" name="multimediaRequirements" value="Professional photography">
+                            <label for="multimediaPhotos">Professional photography</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="multimediaVideo" name="multimediaRequirements" value="Video content">
+                            <label for="multimediaVideo">Video content</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="multimediaAudio" name="multimediaRequirements" value="Audio content">
+                            <label for="multimediaAudio">Audio content</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="multimediaAnimations" name="multimediaRequirements" value="Animations">
+                            <label for="multimediaAnimations">Animations</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="multimediaGraphics" name="multimediaRequirements" value="Interactive graphics">
+                            <label for="multimediaGraphics">Interactive graphics</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="multimedia3D" name="multimediaRequirements" value="3D models">
+                            <label for="multimedia3D">3D models</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="multimediaTours" name="multimediaRequirements" value="Virtual tours">
+                            <label for="multimediaTours">Virtual tours</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="multimediaOther" name="multimediaRequirements" value="Other">
+                            <label for="multimediaOther">Other:</label>
+                            <input type="text" id="multimediaOtherText" name="multimediaOtherText" class="inline-input">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section" id="designPreferences">
+                <h2><i class="fas fa-paint-brush"></i> 4. Design Preferences</h2>
+                
+                <div class="subsection">
+                    <h3>Website Examples</h3>
+                    <p class="help-text">Please provide examples of websites you like and explain why:</p>
+                    
+                    <div class="form-group">
+                        <label for="likeWebsite1">Website 1 URL:</label>
+                        <input type="url" id="likeWebsite1" name="likeWebsite1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="likeReason1">What you like about it:</label>
+                        <textarea id="likeReason1" name="likeReason1" rows="2"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="likeWebsite2">Website 2 URL:</label>
+                        <input type="url" id="likeWebsite2" name="likeWebsite2">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="likeReason2">What you like about it:</label>
+                        <textarea id="likeReason2" name="likeReason2" rows="2"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="likeWebsite3">Website 3 URL:</label>
+                        <input type="url" id="likeWebsite3" name="likeWebsite3">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="likeReason3">What you like about it:</label>
+                        <textarea id="likeReason3" name="likeReason3" rows="2"></textarea>
+                    </div>
+                    
+                    <p class="help-text">Please provide examples of websites you dislike and explain why:</p>
+                    
+                    <div class="form-group">
+                        <label for="dislikeWebsite1">Website 1 URL:</label>
+                        <input type="url" id="dislikeWebsite1" name="dislikeWebsite1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dislikeReason1">What you dislike about it:</label>
+                        <textarea id="dislikeReason1" name="dislikeReason1" rows="2"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dislikeWebsite2">Website 2 URL:</label>
+                        <input type="url" id="dislikeWebsite2" name="dislikeWebsite2">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dislikeReason2">What you dislike about it:</label>
+                        <textarea id="dislikeReason2" name="dislikeReason2" rows="2"></textarea>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Brand Guidelines</h3>
+                    <p class="help-text">Do you have existing brand guidelines or logo?</p>
+                    
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="brandYesGuidelines" name="brandGuidelines" value="Yes, I have brand guidelines I can provide">
+                            <label for="brandYesGuidelines">Yes, I have brand guidelines I can provide</label>
+                        </div>
+                        
+                        <div class="radio-item">
+                            <input type="radio" id="brandYesLogo" name="brandGuidelines" value="Yes, I have a logo but no formal guidelines">
+                            <label for="brandYesLogo">Yes, I have a logo but no formal guidelines</label>
+                        </div>
+                        
+                        <div class="radio-item">
+                            <input type="radio" id="brandNo" name="brandGuidelines" value="No, I need help developing branding">
+                            <label for="brandNo">No, I need help developing branding</label>
+                        </div>
+                        
+                        <div class="radio-item">
+                            <input type="radio" id="brandOther" name="brandGuidelines" value="Other">
+                            <label for="brandOther">Other:</label>
+                            <input type="text" id="brandOtherText" name="brandOtherText" class="inline-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Color Preferences</h3>
+                    <div class="form-group">
+                        <label for="colorPreferences">Please describe any color preferences or requirements for your website:</label>
+                        <textarea id="colorPreferences" name="colorPreferences" rows="3"></textarea>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Content Readiness</h3>
+                    <p class="help-text">What content do you have ready for your website?</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="contentText" name="contentReadiness" value="Text content">
+                            <label for="contentText">Text content</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="contentPhotos" name="contentReadiness" value="Professional photos">
+                            <label for="contentPhotos">Professional photos</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="contentLogo" name="contentReadiness" value="Logo and brand assets">
+                            <label for="contentLogo">Logo and brand assets</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="contentVideos" name="contentReadiness" value="Videos">
+                            <label for="contentVideos">Videos</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="contentProducts" name="contentReadiness" value="Product information">
+                            <label for="contentProducts">Product information</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="contentAssistance" name="contentReadiness" value="Need assistance with content creation">
+                            <label for="contentAssistance">Need assistance with content creation</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="contentOther" name="contentReadiness" value="Other">
+                            <label for="contentOther">Other:</label>
+                            <input type="text" id="contentOtherText" name="contentOtherText" class="inline-input">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section" id="additionalInfo">
+                <h2><i class="fas fa-info-circle"></i> 5. Additional Information</h2>
+                
+                <div class="form-group">
+                    <label for="additionalInfo">Please provide any other information that might be helpful for your website design:</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="5"></textarea>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button type="submit" id="submitButton">Submit Questionnaire</button>
+                <button type="button" id="saveButton">Save for Later</button>
+                <button type="reset" id="resetButton">Reset Form</button>
+            </div>
+        </form>
+        
+        <div id="successMessage" class="hidden">
+            <h2><i class="fas fa-check-circle success-icon"></i> Thank You!</h2>
+            <p>Your questionnaire has been submitted successfully. We'll review your information and get back to you shortly.</p>
+            <p>The information you've provided will help us create a website that perfectly matches your business needs and goals.</p>
+            <button id="newFormButton">Fill Out Another Form</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Website Design Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="assets/enhanced.js"></script>
+</body>
+</html>
