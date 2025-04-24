@@ -128,9 +128,7 @@ label {
     font-weight: 500;
 }
 
-.required {
-    color: var(--error-color);
-}
+/* Removed .required class styling */
 
 input[type="text"],
 input[type="email"],

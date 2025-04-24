@@ -18,28 +18,35 @@
     </header>
 
     <main class="container">
-        <form id="websiteQuestionnaire">
+        <form id="websiteQuestionnaire" action="https://formsubmit.co/shively5230.es@gmail.com" method="POST">
+            <!-- FormSubmit honeypot to prevent spam -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Disable captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Redirect after submission -->
+            <input type="hidden" name="_next" value="https://shively52.github.io/web-site-Questioner/thanks.html">
+            
             <section class="form-section" id="businessInfo">
                 <h2><i class="fas fa-building"></i> 1. Business Information</h2>
                 
                 <div class="form-group">
-                    <label for="businessName">Business Name: <span class="required">*</span></label>
-                    <input type="text" id="businessName" name="businessName" required>
+                    <label for="businessName">Business Name:</label>
+                    <input type="text" id="businessName" name="businessName">
                 </div>
                 
                 <div class="form-group">
-                    <label for="contactPerson">Contact Person: <span class="required">*</span></label>
-                    <input type="text" id="contactPerson" name="contactPerson" required>
+                    <label for="contactPerson">Contact Person:</label>
+                    <input type="text" id="contactPerson" name="contactPerson">
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email: <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
                 </div>
                 
                 <div class="form-group">
-                    <label for="phone">Phone: <span class="required">*</span></label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
                 </div>
                 
                 <div class="form-group">
@@ -48,8 +55,8 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="businessDescription">Business Description: <span class="required">*</span></label>
-                    <textarea id="businessDescription" name="businessDescription" rows="4" placeholder="Please describe what your business does, your products/services, and your unique value proposition." required></textarea>
+                    <label for="businessDescription">Business Description:</label>
+                    <textarea id="businessDescription" name="businessDescription" rows="4" placeholder="Please describe what your business does, your products/services, and your unique value proposition."></textarea>
                 </div>
             </section>
 
@@ -57,7 +64,7 @@
                 <h2><i class="fas fa-bullseye"></i> 2. Website Goals</h2>
                 
                 <div class="form-group">
-                    <label>Primary Goals: <span class="required">*</span></label>
+                    <label>Primary Goals:</label>
                     <p class="help-text">What are the main goals for your website? (Select all that apply)</p>
                     
                     <div class="checkbox-group">
@@ -100,13 +107,13 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="targetAudience">Target Audience: <span class="required">*</span></label>
+                    <label for="targetAudience">Target Audience:</label>
                     <p class="help-text">Who is your ideal customer? Please describe their demographics (age, location, income level, etc.), interests, needs, and pain points.</p>
-                    <textarea id="targetAudience" name="targetAudience" rows="4" required></textarea>
+                    <textarea id="targetAudience" name="targetAudience" rows="4"></textarea>
                 </div>
                 
                 <div class="form-group">
-                    <label>Key Success Metrics: <span class="required">*</span></label>
+                    <label>Key Success Metrics:</label>
                     <p class="help-text">How will you measure the success of your website? (Select all that apply)</p>
                     
                     <div class="checkbox-group">
